@@ -1,0 +1,117 @@
+/* Add this CSS to your stylesheet */
+
+/* Styling for the section */
+.about {
+  padding: 80px 0;
+}
+
+/* Styling for the tabs and content */
+.leftPartTabs {
+  margin-bottom: 20px;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--background-white);
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  background-image: linear-gradient(-45deg, #1521fdcb 0%, #9113e6 74%);
+}
+
+.nav-pills .nav-link {
+  color: var(--background-white); /* Change text color to white */
+  border: solid 2px #5b49ff;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  min-width: 200px; /* Adjust min-width as needed */
+  box-shadow: 0px 0px 3px #5b49ff, 0px 0px 4px #5b49ff, 0px 0px 7px #5b49ff,
+    0px 0px 13px #5b49ff;
+}
+
+/* Styling for tab content */
+.rightPart {
+  padding-left: 15px; /* Adjust padding as needed */
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.left-tab {
+  flex: 0 0 40%; /* Adjust the width as needed */
+  max-width: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.right-tab {
+  flex: 0 0 60%; /* Adjust the width as needed */
+  max-width: 300px;
+  padding-left: 20px; /* Add a gap on the right side */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-child {
+  text-align: justify;
+  color: var(--background-white); /* Change text color to white */
+  font-weight: bold;
+}
+
+.benefits {
+  font-weight: 900;
+  color: var(--background-white); /* Change text color to white */
+}
+
+.text-center {
+  text-align: center;
+  padding: 0.8rem;
+  color: var(--background-white); /* Change text color to white */
+}
+
+.hr-center {
+  margin: auto;
+  border-color: var(--background-white); /* Change border color to white */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 992px) {
+  .leftPart, .rightPart {
+    width: 100%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-tab, .right-tab {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    max-width: 100%;
+    padding-left: 0; /* Remove gap on smaller screens */
+  }
+}
